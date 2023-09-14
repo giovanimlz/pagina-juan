@@ -1,0 +1,41 @@
+/* Estilos para los miembros del equipo */
+.team-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0 auto;
+    height: 400px;
+    max-width: 50%;
+    background-color: #f7f7f7;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Estilos para la información del miembro */
+.member-info {
+    font-family: Arial, sans-serif;
+    padding-left: 10px;
+}
+
+.member-info h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.member-info p {
+    margin: 5px 0;
+}
+
+/* Estilos para la imagen del miembro */
+.member-image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Efecto de sombreado al pasar el ratón */
+.team-member:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
