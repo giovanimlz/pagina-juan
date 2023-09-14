@@ -1,0 +1,499 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cccdda; /* Color de fondo */
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para el header */
+.header {
+    background-color: #3498db; /* Cambia el color de fondo según tu preferencia */
+    padding: 10px 0; /* Espaciado interno superior e inferior */
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Asegura que el header esté en la parte superior de la pantalla */
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    display: flex; /* Utiliza un diseño flexible para organizar el contenido */
+    justify-content: space-between; /* Coloca los elementos a los lados de la pantalla */
+    align-items: center; /* Centra verticalmente los elementos */
+    border-radius: 5px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Estilos para el logo */
+.logo img {
+    max-width: 100px; /* Ajusta el ancho máximo del logo según tus necesidades */
+    margin-right: 0 auto; /* Espaciado derecho para separar el logo del nombre de la empresa */
+}
+
+.logo span{
+    color: #cccdda;
+    font-size: 25px;
+}
+
+/* Estilos para el nombre de la empresa */
+.empresa p {
+    color: #fff; /* Color del texto del nombre de la empresa */
+    font-size: 18px; /* Tamaño de fuente del nombre de la empresa */
+}
+
+
+
+/* Estilos para la lista de enlaces */
+.nav ul {
+    list-style: none; /* Elimina los puntos de lista */
+    margin: 50px;
+    padding: 0;
+    display: flex; /* Utiliza un diseño flexible para organizar los enlaces */
+}
+
+.nav ul li {
+    margin-right: 20px; /* Espaciado derecho entre los elementos de la lista */
+}
+
+.nav ul li:last-child {
+    margin-right: 0; /* Elimina el espaciado derecho del último elemento */
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Color del texto de los enlaces */
+    font-weight: bold; /* Estilo de fuente negrita */
+    font-size: 16px; /* Tamaño de fuente de los enlaces */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la sección de ofertas de trabajo */
+.ofertas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1600px;
+    width: 90%;
+    margin: 20px auto;
+    margin-top: 120px;
+}
+
+.oferta {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 400px; /* Ajuste del alto de las columnas */
+}
+
+.overlay{
+    padding: 30px;
+}
+
+.oferta:hover p{
+    transform: scale(1.05); /* Efecto de escala al pasar el puntero */
+    color: #fff;
+}
+
+.oferta .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa de superposición oscura */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.oferta:hover .overlay {
+    opacity: 1; /* Hace visible la capa de superposición al pasar el puntero */
+}
+
+.oferta h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.oferta p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/* Estilos para la sección "video-container" con descripción */
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Color de fondo para la sección */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333; /* Color de texto oscuro */
+}
+
+.video {
+    flex-basis: calc(60% - 20px); /* Ancho de la columna del video */
+}
+
+.video iframe {
+    width: 100%;
+    height: 500px; /* Aumento de la altura del video */
+}
+
+.descripcion {
+    flex-basis: calc(40% - 20px); /* Ancho de la columna de descripción */
+    padding: 20px;
+    background-color: #f2f2f2; /* Color de fondo para la columna de descripción */
+    border-radius: 5px;
+}
+
+.descripcion h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007BFF; /* Color de acento */
+    text-align: center;
+}
+
+.descripcion p {
+    font-size: 18px; /* Aumento del tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas mejorado */
+    color: #555; /* Color de texto más claro */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la sección "Aplicar a un Trabajo" */
+.aplicar-container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    height: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff; /* Color de fondo para el formulario */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333; /* Color de texto oscuro */
+}
+
+.aplicar-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007BFF; /* Color de acento */
+}
+
+.aplicar-container p {
+    font-size: 16px;
+    color: #555; /* Color de texto más claro */
+}
+
+.aplicar-container form {
+    text-align: left; /* Alinear el contenido del formulario a la izquierda */
+}
+
+.aplicar-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Color de texto oscuro */
+}
+
+.aplicar-container input[type="text"],
+.aplicar-container input[type="email"]{
+    margin-right: 10px;
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.aplicar-container textarea{
+    margin-right: 10px;
+    width: 96%;
+    height: 185px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.aplicar-container button[type="submit"] {
+    display: block;
+    margin: 0 auto; /* Centrar el botón */
+    padding: 10px 20px;
+    background-color: #007BFF; /* Color de acento para el botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.aplicar-container button[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el puntero */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la ventana emergente */
+.modal {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+
+
+
+
+
+
+
+
+
+h1{
+    text-align: center;
+    color: #007BFF;
+}
+
+/* Estilos para el contenedor del mapa */
+
+.mapatodo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
+}
+
+.redes-sociales p{
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.redes-sociales img{
+    height: 30px;
+}
+
+#map-container {
+    text-align: center; /* Centro el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno para separar el título del mapa */
+}
+
+/* Estilos para el título */
+#map-title {
+    font-size: 24px; /* Tamaño de fuente personalizable */
+    color: #333; /* Color de texto personalizable */
+    margin-bottom: 10px; /* Espaciado inferior para separar el título del mapa */
+    text-align: center; /* Centro el título horizontalmente */
+}
+
+#map {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    max-width: 800px; /* Establece un ancho máximo para controlar el tamaño en pantallas grandes */
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Centra horizontalmente el contenedor del mapa */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el pie de página */
+.footer {
+    text-align: center;
+    background-color: #007BFF; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto del pie de página */
+    padding: 10px 0;
+    margin-top: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #fff; /* Color de los enlaces en el pie de página */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #f2f2f2; /* Cambio de color al pasar el puntero sobre los enlaces */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el contenedor de las ofertas */
+.ofertas-empleo {
+    display: flex;
+    flex-direction: column; /* Coloca las ofertas una debajo de la otra */
+    gap: 20px; /* Espacio entre las ofertas */
+    margin-top: 80px;
+}
+
+/* Estilo para cada oferta individual */
+.oferta {
+    background-color: #f2f2f2; /* Color de fondo de las ofertas */
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Estilo para el título del cargo */
+.oferta h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la descripción de la oferta */
+.oferta p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* Estilo para los detalles de la oferta (ciudad, modalidad y salario) */
+.oferta p:last-child {
+    font-weight: bold;
+}
+
+/* Eliminar el efecto hover */
+.oferta:hover {
+    background-color: #f2f2f2; /* Mantener el mismo color de fondo en hover */
+    transform: none; /* Eliminar cualquier transformación en hover */
+}
+
+
