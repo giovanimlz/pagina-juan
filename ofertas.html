@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="ofertas.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <title>Selección de Personal</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="/imagenes/logo.png" alt="Logo de la empresa">
+            <p>Grupo empresarial <br> <span>A</span>rcadia</p>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ofertas.html">Ofertas de Trabajo</a></li>
+                <li><a href="equipo.html">Nuestro equipo</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Ofertas de Empleo</title>
+</head>
+<body>
+    <div class="ofertas-empleo">
+        <div class="ofertas">
+            <h2>Cargo: Desarrollador Web</h2>
+            <p>Descripción: Estamos buscando un desarrollador web altamente creativo y talentoso para unirse a nuestro equipo. Deberás crear sitios web impresionantes y funcionales utilizando las últimas tecnologías.</p>
+            <p>Ciudad: Ciudad A</p>
+            <p>Modalidad: Presencial</p>
+            <p>Salario: $50,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Diseñador Gráfico</h2>
+            <p>Descripción: Buscamos un diseñador gráfico apasionado y con experiencia para ayudarnos a crear gráficos atractivos y creativos para nuestros proyectos. Deberás colaborar estrechamente con nuestro equipo de diseño.</p>
+            <p>Ciudad: Ciudad B</p>
+            <p>Modalidad: Desde casa</p>
+            <p>Salario: $40,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Marketing Manager</h2>
+            <p>Descripción: Estamos en busca de un gerente de marketing con experiencia para liderar nuestras estrategias de marketing digital y tradicional. Deberás supervisar un equipo y lograr resultados impactantes.</p>
+            <p>Ciudad: Ciudad C</p>
+            <p>Modalidad: Presencial</p>
+            <p>Salario: $60,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Analista de Datos</h2>
+            <p>Descripción: Buscamos un analista de datos con habilidades analíticas sólidas para extraer y analizar datos relevantes. Deberás presentar informes y proporcionar información valiosa para la toma de decisiones.</p>
+            <p>Ciudad: Ciudad D</p>
+            <p>Modalidad: Desde casa</p>
+            <p>Salario: $55,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Gerente de Proyecto</h2>
+            <p>Descripción: Estamos en busca de un gerente de proyecto con experiencia para liderar proyectos complejos. Deberás gestionar equipos, presupuestos y plazos de entrega.</p>
+            <p>Ciudad: Ciudad E</p>
+            <p>Modalidad: Presencial</p>
+            <p>Salario: $70,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Redactor de Contenidos</h2>
+            <p>Descripción: Buscamos un redactor de contenidos creativo para crear contenido atractivo y relevante para nuestros sitios web y redes sociales. Deberás tener una excelente gramática y habilidades de escritura.</p>
+            <p>Ciudad: Ciudad F</p>
+            <p>Modalidad: Desde casa</p>
+            <p>Salario: $45,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Analista de Marketing Digital</h2>
+            <p>Descripción: Estamos en busca de un analista de marketing digital para administrar nuestras campañas en línea y analizar el rendimiento. Deberás estar al tanto de las últimas tendencias de marketing digital.</p>
+            <p>Ciudad: Ciudad G</p>
+            <p>Modalidad: Presencial</p>
+            <p>Salario: $55,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Desarrollador de Software</h2>
+            <p>Descripción: Buscamos un desarrollador de software para trabajar en proyectos de desarrollo de aplicaciones. Deberás tener experiencia en programación y conocimiento de lenguajes de programación.</p>
+            <p>Ciudad: Ciudad H</p>
+            <p>Modalidad: Desde casa</p>
+            <p>Salario: $60,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Especialista en Recursos Humanos</h2>
+            <p>Descripción: Estamos en busca de un especialista en recursos humanos para gestionar procesos de selección, capacitación y desarrollo del personal. Deberás tener habilidades de comunicación y organización.</p>
+            <p>Ciudad: Ciudad I</p>
+            <p>Modalidad: Presencial</p>
+            <p>Salario: $50,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Diseñador de UI/UX</h2>
+            <p>Descripción: Buscamos un diseñador de UI/UX para crear interfaces de usuario atractivas y experiencias de usuario excepcionales. Deberás tener experiencia en diseño de aplicaciones y sitios web.</p>
+            <p>Ciudad: Ciudad J</p>
+            <p>Modalidad: Desde casa</p>
+            <p>Salario: $55,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Contador Financiero</h2>
+            <p>Descripción: Estamos en busca de un contador financiero para administrar nuestras finanzas y preparar informes financieros. Deberás tener experiencia en contabilidad y manejo de números.</p>
+            <p>Ciudad: Ciudad K</p>
+            <p>Modalidad: Presencial</p>
+            <p>Salario: $65,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Especialista en Marketing de Contenido</h2>
+            <p>Descripción: Buscamos un especialista en marketing de contenido para crear estrategias de contenido efectivas y atraer a nuestra audiencia en línea. Deberás tener habilidades de escritura y marketing.</p>
+            <p>Ciudad: Ciudad L</p>
+            <p>Modalidad: Desde casa</p>
+            <p>Salario: $50,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Ingeniero de Software Senior</h2>
+            <p>Descripción: Estamos en busca de un ingeniero de software senior con amplia experiencia en desarrollo de software. Deberás liderar proyectos técnicos y trabajar en soluciones avanzadas.</p>
+            <p>Ciudad: Ciudad M</p>
+            <p>Modalidad: Presencial</p>
+            <p>Salario: $70,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Especialista en Ventas</h2>
+            <p>Descripción: Buscamos un especialista en ventas para aumentar nuestros ingresos y expandir nuestra base de clientes. Deberás tener habilidades de comunicación y ventas.</p>
+            <p>Ciudad: Ciudad N</p>
+            <p>Modalidad: Desde casa</p>
+            <p>Salario: $45,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Analista de Datos</h2>
+            <p>Descripción: Estamos buscando un analista de datos altamente cualificado para analizar y presentar datos valiosos para la toma de decisiones empresariales.</p>
+            <p>Ciudad: Ciudad O</p>
+            <p>Modalidad: Presencial</p>
+            <p>Salario: $55,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Gerente de Proyecto</h2>
+            <p>Descripción: Buscamos un gerente de proyecto experimentado para liderar proyectos de alto perfil y asegurarse de que se entreguen a tiempo y dentro del presupuesto.</p>
+            <p>Ciudad: Ciudad P</p>
+            <p>Modalidad: Desde casa</p>
+            <p>Salario: $60,000 al año</p>
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+        <div class="ofertas">
+            <h2>Cargo: Analista de Marketing Digital</h2>
+            <p>Descripción: Estamos en busca de un analista de marketing digital para desarrollar y ejecutar estrategias de marketing en línea para nuestros clientes.</p>
+            <p>Ciudad: Ciudad Q</p>
+            <p>Modalidad: Presencial</p>
+            <p>Salario: $58,000 al año</p>            
+
+            <button id="aplicarBtn">Aplicar</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Su hoja de vida fue enviada</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ofertas.js"></script>
+
+</body>
+</html>
+    <footer class="footer">
+    <p>&copy; 2023 Liceo Psicopedagógico Nueva Castilla <br>Juan Esteban Martinez Rodriguez</br></p>
+</footer>
+</body>
+</html>
