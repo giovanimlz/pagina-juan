@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <title>Selección de Personal</title>
+</head>
+<body>
+   
+    <div class="header">
+        <div class="logo">
+            <img src="/imagenes/logo.png" alt="Logo de la empresa">
+            <p>Grupo empresarial <br> <span>A</span>rcadia</p>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ofertas.html">Ofertas de Trabajo</a></li>
+                <li><a href="equipo.html">Nuestro equipo</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="ofertas-container">
+        <div class="oferta" style="background-image: url('imagenes/hombre2.avif');">
+            <div class="overlay">
+                <h3>Tu Talento es lo que Importa</h3>
+                <p>"En nuestra empresa, creemos firmemente que el género no debe ser un factor limitante en tu carrera. Valoramos tu talento, experiencia y dedicación por encima de todo. Ofrecemos un entorno inclusivo donde cada persona tiene la oportunidad de crecer y prosperar sin importar su género. Estamos comprometidos en construir juntos un futuro laboral donde la igualdad de oportunidades sea una realidad."</p>
+            </div>
+        </div>
+        <div class="oferta" style="background-image: url('imagenes/hombreymujer.jpg');">
+            <div class="overlay">
+                <h3>Un Espacio para Todos los Géneros</h3>
+                <p>"En nuestra organización, abrazamos la diversidad de género y promovemos un ambiente inclusivo para todos. Creemos que cada individuo, independientemente de su género, aporta una perspectiva única y valiosa a nuestro equipo. Valoramos la igualdad de oportunidades y ofrecemos un espacio donde todas las personas pueden desarrollarse y avanzar en sus carreras. Nos comprometemos a construir un futuro laboral donde la diversidad de género sea celebrada y respetada."</p>
+            </div>
+        </div>
+        <div class="oferta" style="background-image: url('imagenes/mujer1.jpg');">
+            <div class="overlay">
+                <h3>Empoderando Carreras Femeninas</h3>
+                <p> "En nuestro equipo, estamos decididos a empoderar y apoyar las carreras de mujeres talentosas como tú. Reconocemos que las mujeres desempeñan un papel fundamental en todos los aspectos de la vida laboral y profesional. Ofrecemos un espacio donde tus metas y aspiraciones son valoradas y respaldadas. Únete a nosotros en la construcción de un futuro donde las mujeres lideren con igualdad de oportunidades y éxito."</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="video-container">
+        <div class="video">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/ROKyHQP1S28" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="descripcion">
+            <h2>Equidad Labora</h2>
+            <p>En el mundo laboral contemporáneo, la igualdad de género es un principio fundamental que no solo promueve la justicia social, sino que también fortalece las empresas y la economía en su conjunto. las empresas de contratación desempeñan un papel crucial al enfocarse en garantizar la igualdad de oportunidades y resaltar la importancia tanto de hombres como de mujeres en el mundo laboral. <br> <br>
+                En nuestra empresa, implementamos políticas de igualdad de género que van más allá de cumplir con las regulaciones legales. Fomentamos un ambiente inclusivo donde hombres y mujeres se sientan valorados y respetados por igual.
+            </p>
+        </div>
+    </section>
+
+    <section class="aplicar-container">
+        <h2>Contactenos</h2>
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="20" required></textarea>
+            <button type="submit" class="btn">Enviar Solicitud</button>
+        </form>
+        <div class="modal" id="confirmacion-modal">
+            <div class="modal-content">
+                <span class="close" id="close-modal">&times;</span>
+                <p>Su solicitud ha sido enviada con éxito.</p>
+            </div>
+        </div>
+    </section>
+    <script src="java.js"></script>
+  
+    <H1>Nuestra ubicación</H1>
+    <div class="mapatodo">
+    <div id="map" style="width: 600px; height: 400px;"></div>
+
+        <div class="redes-sociales">
+            <p>Síguenos en las redes sociales:</p>
+            <a href="https://www.facebook.com/"target=blank><img src="imagenes/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/"target=blank><img src="imagenes/gorjeo.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"target=blank><img src="imagenes/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/"target=blank><img src="imagenes/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.youtube.com/"target=blank><img src="imagenes/youtube.png" alt="YouTube"></a>
+        </div>
+    </div>   
+    <script>
+
+        var map = L.map('map').setView([51.505, -0.09], 13); 
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        L.marker([51.5, -0.09]).addTo(map)
+            .bindPopup('¡Hola! Este es un marcador de ejemplo.').openPopup();
+    </script>
+  
+    <footer class="footer">
+    <p>&copy; 2023 Liceo Psicopedagógico Nueva Castilla <br>Juan Esteban Martinez Rodriguez</br></p>
+</footer>
+</body>
+</html>
